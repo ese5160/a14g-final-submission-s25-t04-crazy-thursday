@@ -19,12 +19,31 @@ Link to the video:
 
 
 
+<<<<<<< Updated upstream
 - What inspired we to do the project? What problem is our device solving?
+=======
+    We use the Internet to enhance our device functionality by integrating it with a web interface, Node-Red, that allows users to remotely set study durations, monitor progress, and receive reminders.
+
+- Device Functionality
+    Explain how your Internet-connected device is designed
+    Include sensors, actuators, and other critical components.
+    Include your system-level block diagram here.
+>>>>>>> Stashed changes
 
 Many of us get distracted by our phones while studying, apps like TikTok and YouTube can be especially addictive. To help improve focus, we developed a timed locking box that securely holds your phone during study sessions, allowing you to concentrate without interruptions.
 
 - How do you use the Internet to augment your device functionality?
 
+<<<<<<< Updated upstream
+=======
+- Next Steps & Takeaways
+
+    What steps are needed to finish or improve this project?
+    
+    I think we can syncrinize our device with cloud storage or Google Calendar to log study sessions and track productivity over time.
+
+    What did you learn in ESE5160 through the lectures, assignments, and this course-long prototyping project?
+>>>>>>> Stashed changes
 
 
 ### 2.2 Device Functionality
