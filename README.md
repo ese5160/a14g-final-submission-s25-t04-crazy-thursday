@@ -17,28 +17,25 @@ Link to the video:
 
 - 2 sentence description of our device.
 
+- What inspired we to do the project? What problem is our device solving?
 
+    Many of us get distracted by our phones while studying, apps like TikTok and YouTube can be especially addictive. To help improve focus, we developed a timed locking box that securely holds your phone during study sessions, allowing you to concentrate without interruptions.
 
-    We use the Internet to enhance our device functionality by integrating it with a web interface, Node-Red, that allows users to remotely set study durations, monitor progress, and receive reminders.
+- How do you use the Internet to augment your device functionality?
 
     We use the Internet to enhance our device functionality by integrating it with a web interface, Node-Red, that allows users to remotely set study durations, monitor progress, and receive reminders.
 
 - Device Functionality
-    Explain how your Internet-connected device is designed
-    Include sensors, actuators, and other critical components.
-    Include your system-level block diagram here.
 
-Many of us get distracted by our phones while studying, apps like TikTok and YouTube can be especially addictive. To help improve focus, we developed a timed locking box that securely holds your phone during study sessions, allowing you to concentrate without interruptions.
-
-- How do you use the Internet to augment your device functionality?
+    Our internet-connected device is designed with a modular task-based architecture to manage study sessions effectively. It uses an IR sensor to detect if a phone is placed inside the box, an IMU to monitor movement during study, and a supplementary limit switch to help detect the phone being placed inside the box. The electromagnetic lock secures the box, while a buzzer and LCD screen provide audio and visual feedback to the user. A button allows users to manually cancel sessions for emergency use. All these components are coordinated through a central System Control Task, which processes sensor data, user inputs, and commands from the WiFi Task. Through WiFi, the device connects to the Internet, enabling users to set lock durations, receive progress updates, and manage sessions remotely using Node-RED. This design ensures a seamless integration between hardware functionality and internet-based control.
 
 - Next Steps & Takeaways
 
-    What steps are needed to finish or improve this project?
+- What steps are needed to finish or improve this project?
     
     I think we can syncrinize our device with cloud storage or Google Calendar to log study sessions and track productivity over time.
 
-    What did you learn in ESE5160 through the lectures, assignments, and this course-long prototyping project?
+- What did you learn in ESE5160 through the lectures, assignments, and this course-long prototyping project?
 
 
 ### 2.2 Device Functionality
