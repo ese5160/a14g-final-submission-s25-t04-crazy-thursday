@@ -24,6 +24,8 @@ Link to the video:
 =======
     We use the Internet to enhance our device functionality by integrating it with a web interface, Node-Red, that allows users to remotely set study durations, monitor progress, and receive reminders.
 
+    We use the Internet to enhance our device functionality by integrating it with a web interface, Node-Red, that allows users to remotely set study durations, monitor progress, and receive reminders.
+
 - Device Functionality
     Explain how your Internet-connected device is designed
     Include sensors, actuators, and other critical components.
