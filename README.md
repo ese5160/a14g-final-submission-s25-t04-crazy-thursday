@@ -15,8 +15,6 @@ Link to the video:
 
 ### 2.1 Device Description
 
-- 2 sentence description of our device.
-
 - What inspired we to do the project? What problem is our device solving?
 
     Many of us get distracted by our phones while studying, apps like TikTok and YouTube can be especially addictive. To help improve focus, we developed a timed locking box that securely holds your phone during study sessions, allowing you to concentrate without interruptions.
@@ -24,19 +22,6 @@ Link to the video:
 - How do you use the Internet to augment your device functionality?
 
     We use the Internet to enhance our device functionality by integrating it with a web interface, Node-Red, that allows users to remotely set study durations, monitor progress, and receive reminders.
-
-- Device Functionality
-
-    Our internet-connected device is designed with a modular task-based architecture to manage study sessions effectively. It uses an IR sensor to detect if a phone is placed inside the box, an IMU to monitor movement during study, and a supplementary limit switch to help detect the phone being placed inside the box. The electromagnetic lock secures the box, while a buzzer and LCD screen provide audio and visual feedback to the user. A button allows users to manually cancel sessions for emergency use. All these components are coordinated through a central System Control Task, which processes sensor data, user inputs, and commands from the WiFi Task. Through WiFi, the device connects to the Internet, enabling users to set lock durations, receive progress updates, and manage sessions remotely using Node-RED. This design ensures a seamless integration between hardware functionality and internet-based control.
-
-- Next Steps & Takeaways
-
-- What steps are needed to finish or improve this project?
-    
-    I think we can syncrinize our device with cloud storage or Google Calendar to log study sessions and track productivity over time.
-
-- What did you learn in ESE5160 through the lectures, assignments, and this course-long prototyping project?
-
 
 ### 2.2 Device Functionality
 
@@ -46,23 +31,39 @@ Link to the video:
 
 - Include your system-level block diagram here.
 
+    Our internet-connected device is designed with a modular task-based architecture to manage study sessions effectively. It uses an IR sensor to detect if a phone is placed inside the box, an IMU to monitor movement during study, and a supplementary limit switch to help detect the phone being placed inside the box. The electromagnetic lock secures the box, while a buzzer and LCD screen provide audio and visual feedback to the user. A button allows users to manually cancel sessions for emergency use. All these components are coordinated through a central System Control Task, which processes sensor data, user inputs, and commands from the WiFi Task. Through WiFi, the device connects to the Internet, enabling users to set lock durations, receive progress updates, and manage sessions remotely using Node-RED. This design ensures a seamless integration between hardware functionality and internet-based control.
+
 ### 2.3 Challenges
 
 - Where did you face difficulties? This could be in firmware, hardware, software, integration, etc.
 
+    We faced several challenges across both hardware and software components. On the hardware side, configuring the LCD with SERCOM3 SPI communication was particularly difficult and required extensive debugging. Instead of using the pin on the development board to connect the LCD one by one, we use the eye spi cable to connect them together. The eye spi simplify the pin connection, but increase the difficulty to debug. We do not know is the bug appear in the connection or the way we configure is wrong. There are too many factors to case the result. In terms of software, we encountered issues with firmware updates from the cloud, as neither the CLI commands nor the web-based instructions worked reliably. Additionally, we experienced stack overflows and memory limitations, since the system had only 32KB of RAM, which led to instability and task crashes during runtime.
+
 - How did you overcome these challenges?
 
+    To resolve the LCD communication issue, we carefully reviewed the SERCOM3 configuration and referred to the SPI setup in the A09G-1 example. We also used a logic analyzer on the MOSI and SCK pins to verify that SPI data was being transmitted correctly. To address memory constraints, we optimized usage by reducing task stack sizes, minimizing global variables, and increasing the FreeRTOS heap size manually to prevent allocation issues. We spent significant time fine-tuning task sizes to maintain a balance between functionality and stability. Additionally, for variables used only within local scopes, we added the const qualifier to store them in flash memory instead of consuming RAM. Regarding the firmware update failures, we believe they were caused by memory leaks. After optimizing memory usage, this issue was resolved automatically.
+    
 ### 2.4 Prototype Learnings
 
 - What lessons did you learn by building and testing this prototype?
 
+    We learned that using a logic analyzer is extremely helpful for debugging, as it allows us to see exactly what’s happening on the chip and determine whether issues are caused by hardware or software. We also discovered the importance of thoroughly reading datasheets, which helped us understand how to properly configure and use various components. Searching for related examples online and on GitHub gave us valuable insights into how others approached similar problems and inspired our own code design. Finally, we realized that power management is a critical aspect of embedded system design, especially when working with wireless feature.
+
 - What would you do differently if you had to build this device again?
+
+    If we were to build this device again, we would use a bistable linear solenoid instead of an electromagnet, as it is simpler to control and consumes less power. We would also consider adding features like wireless charging at the bottom of the box to improve convenience. Additionally, we would integrate a physical pin pad to allow local lock and unlock functionality, providing an alternative to remote control and increasing reliability.
 
 ### 2.5 Next Steps & Takeaways
 
 - What steps are needed to finish or improve this project?
 
+    To improve this project, we plan to synchronize the device with cloud storage or Google Calendar to automatically log study sessions and help users track their productivity over time. We also aim to enhance the LCD display by showing more detailed information, such as better anime for remaining study time, session progress, and status messages, to provide a better user experience.
+
 - What did you learn in ESE5160 through the lectures, assignments, and this course-long prototyping project?
+
+    ESE5160 gave us a comprehensive, hands-on experience in embedded systems development—from concept to completion. We learned how to translate an idea into a concrete engineering goal. And how to choose appropriate components based on functionality, size, power consumption, and communication interfaces. Through lectures and assignments, we gained valuable skills in schematic design and PCB layout, which were both entirely new to us. Designing a PCB for the first time helped us understand the importance of pin assignments, trace routing, and physical board constraints.
+
+    Once the PCB was manufactured, we experienced the challenges of hardware bring-up—testing the board, debugging connections, and integrating sensors, actuators, and microcontrollers. We also learned to use tools like logic analyzers, oscilloscopes, and serial debuggers to troubleshoot hardware-software interactions. Through the prototyping project, we appreciated the value of modular task-based firmware design, effective memory management, and real-world trade-offs between complexity, power, and performance. Overall, this course gave us the full product development experience and greatly improved our confidence in building real embedded systems.
 
 ### 2.6 Project Links
 
