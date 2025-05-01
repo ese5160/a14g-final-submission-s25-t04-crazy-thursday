@@ -1,47 +1,67 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/AlBFWSQg)
 # a14g-final-submission
 
-    * Team Number: 
-    * Team Name: 
-    * Team Members: 
-    * Github Repository URL: 
-    * Description of test hardware: (development boards, sensors, actuators, laptop + OS, etc) 
+    * Team Number: 04
+    * Team Name: Crazy Thursday
+    * Team Members: Zheyu Li, Zhuozi Xie
+    * Github Repository URL: https://github.com/ese5160/a14g-final-submission-s25-t04-crazy-thursday.git
+    * Description of test hardware: SAMW25 on custom PCBA, Windows Laptop (Microchip Studio)
 
 ## 1. Video Presentation
 
+Link to the video:
+
 ## 2. Project Summary
 
-- Device Description
+### 2.1 Device Description
 
-    Give a 2 sentence description of your device.
-    What inspired you to do the project? What problem is your device solving?
+- 2 sentence description of our device.
 
-    Many of us get distracted by our phones while studying, apps like TikTok and YouTube can be especially addictive. To help improve focus, we developed a timed locking box that securely holds your phone during study sessions, allowing you to concentrate without interruptions.
 
-    How do you use the Internet to augment your device functionality?
 
-- Device Functionality
-    Explain how your Internet-connected device is designed
-    Include sensors, actuators, and other critical components.
-    Include your system-level block diagram here.
+- What inspired we to do the project? What problem is our device solving?
 
-- Challenges
-    Where did you face difficulties? This could be in firmware, hardware, software, integration, etc.
-    How did you overcome these challenges?
+Many of us get distracted by our phones while studying, apps like TikTok and YouTube can be especially addictive. To help improve focus, we developed a timed locking box that securely holds your phone during study sessions, allowing you to concentrate without interruptions.
 
-- Prototype Learnings
-    What lessons did you learn by building and testing this prototype?
-    What would you do differently if you had to build this device again?
+- How do you use the Internet to augment your device functionality?
 
-- Next Steps & Takeaways
-    What steps are needed to finish or improve this project?
-    What did you learn in ESE5160 through the lectures, assignments, and this course-long prototyping project?
 
-- Project Links
-    Provide a URL to your Node-RED instance for our review (make sure it’s running on your Azure instance!)
-    Provide the share link to your final PCBA on Altium 365.
-    Consider downloading your PCBA source and manufacturing files to keep after you leave UPenn. Your Altium access will expire after this semester.
 
+### 2.2 Device Functionality
+
+- Explain how your Internet-connected device is designed
+
+- Include sensors, actuators, and other critical components.
+
+- Include your system-level block diagram here.
+
+### 2.3 Challenges
+
+- Where did you face difficulties? This could be in firmware, hardware, software, integration, etc.
+
+- How did you overcome these challenges?
+
+### 2.4 Prototype Learnings
+
+- What lessons did you learn by building and testing this prototype?
+
+- What would you do differently if you had to build this device again?
+
+### 2.5 Next Steps & Takeaways
+
+- What steps are needed to finish or improve this project?
+
+- What did you learn in ESE5160 through the lectures, assignments, and this course-long prototyping project?
+
+### 2.6 Project Links
+
+URL to the Node-RED instance:
+
+http://172.191.68.14:1880/ui/
+
+Share link to our final PCBA on Altium 365:
+
+https://upenn-eselabs.365.altium.com/designs/2072B8AC-2960-444A-B440-9D8EECED0507
 
 ## 3. Hardware & Software Requirements
 
@@ -81,11 +101,33 @@
 
 ## 4. Project Photos & Screenshots
 
-## Codebase
+Here’s one example: https://felixhayashi.github.io/ReadmeGalleryCreatorForGitHub/ 
+
+Required photos and screenshots include:
+
+Final Project:
+
+The standalone PCBA, top
+
+The standalone PCBA, bottom
+
+Thermal camera images while the board is running under load:
+
+The Altium Board design in 2D view
+
+The Altium Board design in 3D view
+
+Node-RED dashboard (screenshot)
+
+Node-RED backend (screenshot)
+
+Block diagram of your system (You may need to update this to reflect changes throughout the semester.)
+
+## 5. Codebase
 
 - [Code folder](./Code/)
 
 - [Node-RED dashboard code](http://172.191.68.14:1880)
 
-- Links to any other software required for the functionality of your device
+No other software required.
 
