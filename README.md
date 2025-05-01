@@ -116,7 +116,7 @@ Required photos and screenshots include:
 
 - Final Project:
 
-
+![alt text](Images/FinalProject.jpg)
 
 - The standalone PCBA, top
 
@@ -140,28 +140,36 @@ Required photos and screenshots include:
 
 - Node-RED dashboard(Phone view)
 
-![alt text](Images/NodeRed_UI1.png)
+### Node-RED dashboard (Phone view)
 
-![alt text](Images/NodeRed_UI2.png)
-
-![alt text](Images/NodeRed_UI3.png)
+<p float="left">
+  <img src="Images/NodeRed_UI1.png" alt="UI1" width="30.5%" />
+  <img src="Images/NodeRed_UI2.png" alt="UI2" width="30%" />
+  <img src="Images/NodeRed_UI3.png" alt="UI3" width="30.25%" />
+</p>
 
 - Node-RED backend
 
 ![alt text](Images/NodeRed_Backend1.png)
 
-![alt text](Images/NodeRed_Backend2.png)
-
-![alt text](Images/NodeRed_Backend3.png)
+<p float="left">
+  <img src="Images/NodeRed_Backend2.png" alt="UI1" width="45%" />
+  <img src="Images/NodeRed_Backend3.png" alt="UI2" width="48%" />
+</p>
 
 - Block diagram of the system
 
-Initial version:
+Initial version & final version:
 
 ![alt text](Images/SystemBlockDiagram_ver1.png)
 
-Final version (adding IMU, update device logic)
+Final version (adding IMU & SD Card, update device logic)
 
+![alt text](Images/SYStemBlockDiagram_ver2.png)
+
+- Power Block Diagram
+
+![alt text](Images/PowerBlockDiagram.png)
 
 ## 5. Codebase
 
