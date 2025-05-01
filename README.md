@@ -80,10 +80,9 @@
 
 ## Codebase
 
-- A link to your final embedded C firmware codebases
+- [Code folder](./Code/)
 
-[Code folder](./Code/)
+- [Node-RED dashboard code](http://172.191.68.14:1880)
 
-- A link to your Node-RED dashboard code
 - Links to any other software required for the functionality of your device
 
