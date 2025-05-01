@@ -101,27 +101,49 @@ https://upenn-eselabs.365.altium.com/designs/2072B8AC-2960-444A-B440-9D8EECED050
 
 ## 4. Project Photos & Screenshots
 
-Here’s one example: https://felixhayashi.github.io/ReadmeGalleryCreatorForGitHub/ 
-
 Required photos and screenshots include:
 
-Final Project:
+- Final Project:
 
-The standalone PCBA, top
 
-The standalone PCBA, bottom
 
-Thermal camera images while the board is running under load:
+- The standalone PCBA, top
 
-The Altium Board design in 2D view
+![alt text](Images/PCBA_Top.jpg)
 
-The Altium Board design in 3D view
+- The standalone PCBA, bottom
 
-Node-RED dashboard (screenshot)
+![alt text](Images/PCBA_Bot.jpg)
 
-Node-RED backend (screenshot)
+- Thermal camera images while the board is running under load:
 
-Block diagram of your system (You may need to update this to reflect changes throughout the semester.)
+![alt text](Images/Thermal_image.jpg)
+
+- The Altium Board design in 2D view
+
+![alt text](Images/Altium_2D.png)
+
+- The Altium Board design in 3D view
+
+![alt text](Images/Altium_3D.png)
+
+- Node-RED dashboard(Phone view)
+
+![alt text](Images/NodeRed_UI1.png)
+
+![alt text](Images/NodeRed_UI2.png)
+
+![alt text](Images/NodeRed_UI3.png)
+
+- Node-RED backend
+
+![alt text](Images/NodeRed_Backend1.png)
+
+![alt text](Images/NodeRed_Backend2.png)
+
+![alt text](Images/NodeRed_Backend3.png)
+
+- Block diagram of the system (You may need to update this to reflect changes throughout the semester.)
 
 ## 5. Codebase
 
@@ -130,4 +152,3 @@ Block diagram of your system (You may need to update this to reflect changes thr
 - [Node-RED dashboard code](http://172.191.68.14:1880)
 
 No other software required.
-
