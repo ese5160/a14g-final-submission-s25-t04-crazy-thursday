@@ -12,8 +12,11 @@
 ## 2. Project Summary
 
 - Device Description
+
     Give a 2 sentence description of your device.
     What inspired you to do the project? What problem is your device solving?
+
+    Many of us get distracted by our phones while studying, apps like TikTok and YouTube can be especially addictive. To help improve focus, we developed a timed locking box that securely holds your phone during study sessions, allowing you to concentrate without interruptions.
 
     How do you use the Internet to augment your device functionality?
 
