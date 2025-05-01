@@ -81,7 +81,9 @@
 ## Codebase
 
 - A link to your final embedded C firmware codebases
-[Code folder](https://github.com/username/repository-name/tree/main/Code)
+
+[Code folder](./Code/)
+
 - A link to your Node-RED dashboard code
 - Links to any other software required for the functionality of your device
 
