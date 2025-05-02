@@ -85,19 +85,35 @@ https://upenn-eselabs.365.altium.com/designs/2072B8AC-2960-444A-B440-9D8EECED050
 
 - HRS 01 – Project shall be based on SAM W25 microcontroller (WiFi supported).
 
+    The MCU on the custum PCB is using SAM W25.
+
 - HRS 02 – An IR sensor(via I2C) shall be used for phone detection. The sensor shall be able to accurately detect distances in the range of 1-10cm.
+
+    The IR sensor we use is VCNL4010, it worked best at distances of about 10-150mm. It perfectly match our requirement for detecting distance in a small box.
 
 - HRS 03 – An 5V DC electromagnet with at least 2.5kg holding force shall be used to support the lock mechanism.
 
+    The electromagnet we use is Adafruit 3872, it powered by 5VDC with Holding Force: 2.5 Kg / 5.5 lb. This also perfectly match our requirement.
+
 - HRS 04 – An LCD display shall be used for user interface. The display shall communicate with the microcontroller via SPI.
+
+    The LCD we use is Adafruit 1480, which is a "2.2" 18-bit color TFT LCD display with microSD card breakout - EYESPI Connector." It communicate with MCU through SPI.
 
 - HRS 05 – A passive buzzer that releases sounds of different frequencies shall be used.
 
+    The buzzer we use is "PUI Audio SMT-0540-S-2-R." It can play sound 75dB with in the range of  3500 to 4500 Hz.
+
 - HRS 06 - A Li-Ion battery (3.7V nominal voltage) Shall be used as the power supply of the whole system.
+
+    The Li-Ion battery we use is “ICR18650 2200mAh 3.7V.” The Nominal Voltage is 3.7V, Charging Cut-off Voltage 4.2V, and Discharge Cut-off Voltage 3.0V.
 
 - HRS 07 - A limit switch shall be used with IR sensor to cross validate that the cell phone is placed in the box
 
+    Due to the conflict with our case , the height of the middle sheet is
+
 - HRS 08 - A 6-DOF IMU supporting I2C connection shall be used to detect whether the box has been moved or not，>10Hz sample rate is enough.
+
+    The IMU we use is "LSM6DSO," it powered up 3.3V and uses a standard slave I²C channel at speed up to 400 kHz.
 
 ### SRS
 
