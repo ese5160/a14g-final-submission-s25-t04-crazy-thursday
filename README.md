@@ -119,17 +119,33 @@ https://upenn-eselabs.365.altium.com/designs/2072B8AC-2960-444A-B440-9D8EECED050
 
 - SRS 01 – The IR sensor and limit switch shall continuously detect the presence of objects inside the box when the time is set and before the box is closed(in Prepare Stage).
 
+    We change our logic here, that IR sensor only enable detection when we hit the start command. It will keep detect the availability of the phone in a time range. If the phone is there in the time, the box will lock and disable the IR sensor. If not, we will back to prepare stage and wait for another command for the cloud. Due to the design of the case work, we finally choose not use the limit switch.
+
 - SRS 02 - The Device shall receive commands from mobile phones using WiFi.
+
+    We use mqtt to send commands from the cloud. We can use both PC and phone to send commands.
 
 - SRS 03 - The box shall support setting study time using mobile phone (based on WiFi connection).
 
+    We have a scroll pad to choose and setting time.
+    ![alt text](Images/SRS-3.png)
+
 - SRS 04 - The electromagnet shall be controlled according to the status of IR sensor, limit switch and emergency release button.
+
+    The electromagnet will keep working during the time we setting. It will unlock if we press the emergency release button at the bottom of the box.
+    The IR sensor and limit switch do not participate the locking process.
 
 - SRS 05 - The buzzer should play sound to inform the user to study when reaching the scheduled study time.
 
+    This is the task we plan to do to improve our project. Connecting our cloud with Google calendar will help us setting study time.
+
 - SRS 06 - The buzzer should play sound to inform the user to rest when the setting time period end.
 
+    We played the melody of "Happy Birthday Song" to info the user time end.
+
 - SRS 07 - IMU's reading should determine the LCD on/off based on the box gesture during lock state.
+
+    This is also something we think we can do in the future to improve the project. Turn the LCD off when we not focuse on it will save the power and increase usage time.
 
 ## 4. Project Photos & Screenshots
 
