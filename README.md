@@ -15,6 +15,10 @@ Link to the video:
 
 ### 2.1 Device Description
 
+- Describe our device in 2 sentences
+
+    A phone locker that can lock your phone when you need to focus on your work. Set the learning time through our webUI, put the phone in the locker and it can't be taken out until the learning time has ended.
+
 - What inspired we to do the project? What problem is our device solving?
 
     Many of us get distracted by our phones while studying, apps like TikTok and YouTube can be especially addictive. To help improve focus, we developed a timed locking box that securely holds your phone during study sessions, allowing you to concentrate without interruptions.
