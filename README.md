@@ -31,7 +31,7 @@ Link to the video: https://youtu.be/bRq8x4013wI
 
 Our internet-connected device is designed with a modular task-based architecture to manage study sessions effectively. It uses an IR sensor to detect if a phone is placed inside the box, an IMU to monitor movement during study, and a supplementary limit switch to help detect the phone being placed inside the box. The electromagnetic lock secures the box, while a buzzer and LCD screen provide audio and visual feedback to the user. A button allows users to manually cancel sessions for emergency use. All these components are coordinated through a central System Control Task, which processes sensor data, user inputs, and commands from the WiFi Task. Through WiFi, the device connects to the Internet, enabling users to set lock durations, receive progress updates, and manage sessions remotely using Node-RED. This design ensures a seamless integration between hardware functionality and internet-based control.
 
-![alt text](Images/SYStemBlockDiagram_ver2.png)
+![alt text](Images/SystemBlockDiagram_ver2.png)
 
 ### 2.3 Challenges
 
