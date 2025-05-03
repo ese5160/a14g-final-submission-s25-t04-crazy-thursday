@@ -1,10 +1,12 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/AlBFWSQg)
-# a14g-final-submission
+# PandoraBox
 
     * Team Number: 04
     * Team Name: Crazy Thursday
     * Team Members: Zheyu Li, Zhuozi Xie
     * Github Repository URL: https://github.com/ese5160/a14g-final-submission-s25-t04-crazy-thursday.git
+    * GithubPage Repository URL: https://github.com/ZheyuLi-SEAS/crazythursday.github.io/tree/main
+    * GithubPage URL: https://zheyuli-seas.github.io/crazythursday.github.io/
     * Description of test hardware: SAMW25 on custom PCBA, Windows Laptop (Microchip Studio)
 
 ## 1. Video Presentation
